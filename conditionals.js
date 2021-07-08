@@ -1,11 +1,17 @@
-const temperature = 16;
+const isCitizen = true;
+const age = 7;
 
-if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!"); // this will run for all temperatures under 0 degrees
-} else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!"); // this will run for all temperatures between 0 and 15 degrees.
-} else {
-  console.log("Short sleeves are fine.");
-} //this will run for all temperatures above 15 degrees. 
+if (isCitizen && age > 18) {
+  console.log("You are eligible to vote.");
+} // this will only run if isCitizen is true and age is over 18
 
-console.log("Now you're ready to go outside!");
+
+
+if (temperature < -40 || temperature > 40) {
+  console.log("Maybe going outside isn't such a great idea…"); 
+}//This will only run below -40 degrees or above 40 degrees. 
+
+if (!raining) {
+  console.log("Leave your umbrella at home!"); //This will only run if not-raining is true
+}
+
